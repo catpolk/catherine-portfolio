@@ -1,6 +1,7 @@
 import React from 'react';
 import About from './About';
 import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 function PagesContainer () {
     let Component 
@@ -10,6 +11,9 @@ function PagesContainer () {
             break
         case "/portfolio":
             Component = Portfolio
+            break
+        case "/contact":
+            Component = Contact
             break
         default:
             Component = About
