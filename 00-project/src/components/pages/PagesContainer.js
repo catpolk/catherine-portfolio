@@ -2,6 +2,7 @@ import React from 'react';
 import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import Resume from './Resume';
 
 function PagesContainer () {
     let Component 
@@ -14,6 +15,9 @@ function PagesContainer () {
             break
         case "/contact":
             Component = Contact
+            break
+        case "/resume":
+            Component = Resume
             break
         default:
             Component = About
