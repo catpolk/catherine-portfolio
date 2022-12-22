@@ -1,30 +1,35 @@
 import React, { useState } from 'react';
 
-import { validateEmail } from '../../utils/helpers'
+import { validateEmail,  } from '../../utils/helpers'
 
 function Contact () {
-    // const [name, setName] = useState('');
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    // const [message, setMessage] = useState('');
+    const [message, setMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
     const handleInputChange = (e) => {
-    // // Getting the value and name of the input which triggered the change
+    // Getting the value and name of the input which triggered the change
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
         if (inputType === 'name') {
-    //         setName(inputValue);
+            setName(inputValue);
         } else if (inputType === 'email') {
             setEmail(inputValue);
             if (!validateEmail(email)) {
-                setErrorMessage('Email or is invalid');    
+                setErrorMessage('Email is invalid');    
             } else { 
                 setErrorMessage('');
             }
-        // } else {
-    //         setMessage(inputValue);
+        } else {
+            setMessage(inputValue);
+            if (message === '') {
+                setErrorMessage('Message is require');    
+            } else { 
+                setErrorMessage('');
+            }
         }
     };
 
@@ -38,20 +43,21 @@ function Contact () {
             <input
             //   value={email}
               name="name"
-              
               type="text" 
             />
             <input
             //   value={userName}
               name="email"
-              onChange={handleInputChange}
+              onBlur={handleInputChange}
               type="email"
             />
             <textarea
             //   value={password}
               name="message"
+              onBlur={handleInputChange}
+              type="text"
             />
-            <button type="button" onClick={handleFormSubmit}>Submit</button>
+            <button type="button" onBlur={handleFormSubmit}>Submit</button>
           </form>
           {errorMessage && (
             <div>
