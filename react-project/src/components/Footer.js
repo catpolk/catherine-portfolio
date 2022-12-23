@@ -3,7 +3,7 @@ import './styles/Footer.css';
 
 function Footer () {
     return (
-        <section>
+        <section className="footer">
             <ul> 
                 <li><a href="https://github.com/catpolk" target="_blank"> Github</a></li>
                 <li><a href="https://www.linkedin.com/in/catherine-polk-860614178/" target="_blank">LinkedIn</a></li>
