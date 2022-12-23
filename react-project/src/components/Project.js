@@ -1,11 +1,15 @@
 import React from 'react';
+import './styles/Project.css';
 
 function Project(props) {
     return (
-        <div>
-            <h1><a href={`${props.href}`}>Project: {props.title} </a></h1>
-            <p><a href={`${props.deployed}`}> Stack: {props.stack} </a></p>
-            <div> This is description of project {props.title}</div>
+        <div className='col-lg-3 pad'>
+            <div className='card'>
+                <div className='card-body'>
+                    <h1 className='card-title'><a href={`${props.href}`}>{props.title}</a></h1>
+                    <p className='card-subtitle mb-2'><a href={`${props.deployed}`}>{props.stack} </a></p>
+                </div>
+            </div>
         </div>
     )
 }
