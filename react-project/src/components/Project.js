@@ -5,9 +5,10 @@ function Project(props) {
     return (
         <div className='col-lg-3 pad'>
             <div className='card'>
+            <img className='image-size' src={`images/${props.img}.png`} />
                 <div className='card-body'>
-                    <h1 className='card-title'><a href={`${props.href}`}>{props.title}</a></h1>
-                    <p className='card-subtitle mb-2'><a href={`${props.deployed}`}>{props.stack} </a></p>
+                    <h1 className='card-title'><a href={`${props.href}`} target="_blank">{props.title}</a></h1>
+                    <p className='card-subtitle mb-2'><a href={`${props.deployed}`} target="_blank">{props.stack} </a></p>
                 </div>
             </div>
         </div>
