@@ -26,7 +26,7 @@ function Contact () {
         } else {
             setMessage(inputValue);
             if (message === '') {
-                setErrorMessage('Message is require');    
+                setErrorMessage('Message is required');    
             } else { 
                 setErrorMessage('');
             }
@@ -38,14 +38,26 @@ function Contact () {
     }
 
     return (
-        <div>
-          <form className="form">
-            <input
-            //   value={email}
-              name="name"
-              type="text" 
-            />
-            <input
+        <div className='container'>
+          <h1>Contact</h1>
+          <form target='blank' action='mailto:cpolknytx@gmail.com' method='post' enctype="text/plain" >
+          {/* // <form className="form"> */}
+            <div className='form-group'>
+              <div className='form-row'>
+                <div className='col'>
+                  <input name="name" type="text" class="form-control" placeholder='Name' onBlur={handleInputChange} required />
+                </div>
+                <div className='col'>
+                  <input name="email" type="email" class="form-control" placeholder='Email Address' onBlur={handleInputChange} required />
+                </div>
+              </div>
+            </div>
+            <div className="form-group"> 
+              <textarea placeholder="Your Message" class="form-control" name="message" rows="5" onBlur={handleInputChange} required> </textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-dark btn-block" onBlur={handleInputChange}>Submit Form</button>
+           
+            {/* <input
             //   value={userName}
               name="email"
               onBlur={handleInputChange}
@@ -57,7 +69,8 @@ function Contact () {
               onBlur={handleInputChange}
               type="text"
             />
-            <button type="button" onBlur={handleFormSubmit}>Submit</button>
+            <button type="button" onBlur={handleFormSubmit}>Submit</button> */}
+
           </form>
           {errorMessage && (
             <div>
