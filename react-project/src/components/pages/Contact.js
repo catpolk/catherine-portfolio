@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-import { validateEmail,  } from '../../utils/helpers'
+import { validateEmail,  } from '../../utils/helpers';
+import '../styles/Contact.css';
 
 function Contact () {
     const [name, setName] = useState('');
@@ -41,36 +42,22 @@ function Contact () {
         <div className='container'>
           <h1>Contact</h1>
           <form target='blank' action='mailto:cpolknytx@gmail.com' method='post' enctype="text/plain" >
-          {/* // <form className="form"> */}
             <div className='form-group'>
               <div className='form-row'>
-                <div className='col'>
+                <div className='col-6'>
                   <input name="name" type="text" class="form-control" placeholder='Name' onBlur={handleInputChange} required />
                 </div>
-                <div className='col'>
+                <br/>
+                <div className='col-6'>
                   <input name="email" type="email" class="form-control" placeholder='Email Address' onBlur={handleInputChange} required />
                 </div>
+                <br/>
               </div>
             </div>
             <div className="form-group"> 
-              <textarea placeholder="Your Message" class="form-control" name="message" rows="5" onBlur={handleInputChange} required> </textarea>
+              <textarea className='input-text' placeholder="Your Message" class="form-control" name="message" rows="5" onBlur={handleInputChange} required> </textarea>
             </div>
             <button type="submit" class="btn btn-lg btn-dark btn-block" onBlur={handleInputChange}>Submit Form</button>
-           
-            {/* <input
-            //   value={userName}
-              name="email"
-              onBlur={handleInputChange}
-              type="email"
-            />
-            <textarea
-            //   value={password}
-              name="message"
-              onBlur={handleInputChange}
-              type="text"
-            />
-            <button type="button" onBlur={handleFormSubmit}>Submit</button> */}
-
           </form>
           {errorMessage && (
             <div>
