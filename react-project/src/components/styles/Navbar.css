@@ -1,5 +1,6 @@
 * {
     box-sizing: boredr-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
@@ -7,14 +8,19 @@ body {
 }
 
 .nav {
-    background-color: #333;
-    color: white;
+    background-color: #dad9dfed;;
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     gap: 2rem;
-    padding: 0 1rem;
+
 }
+
+.nav h1 {
+    padding-left: 50px;
+    margin: 20px;
+}   
 
 .nav ul {
     padding: 0;
@@ -22,7 +28,8 @@ body {
     list-style: none;
     display: flex;
     gap: 1rem;
-
+    font-size: larger;
+    padding-right: 30px;
 }
 
 .nav a {
@@ -35,5 +42,5 @@ body {
 }
 
 .nav li:hover {
-    background-color: #777;
+    background-color: rgb(159, 208, 201);
 }

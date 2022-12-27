@@ -9,16 +9,17 @@
 .card-body {
     opacity: 0;
     height: 200px;
+    gap: 2rem;
 }
 
-.card a {
+.card-body a {
     font-size: medium;
     color: white;
-    font-size: x-large;
     text-decoration: solid;
-
 }
-
+ .card-body p {
+    color: white;
+ }
 
 .card-body:hover {
     background-color: rgb(159, 208, 201);

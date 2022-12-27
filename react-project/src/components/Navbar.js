@@ -4,7 +4,7 @@ import './styles/Navbar.css';
 function Navbar() {
     return (
         <nav className='nav'>
-            <h2>Catherine Polk</h2>
+            <h1>Catherine Polk</h1>
             <ul> 
                 <li><a href="/">About me</a> </li>
                 <li><a href="/portfolio">Portfolio</a></li>
