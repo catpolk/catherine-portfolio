@@ -24,7 +24,11 @@ function PagesContainer () {
             break;
     }
 
-    return (<Component />);
+    return (
+        <div className='container pt-4'>
+            <Component />
+        </div>
+    );
 }
 
 export default PagesContainer;

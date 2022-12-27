@@ -39,7 +39,7 @@ function Portfolio () {
     })
 
     return (
-        <div className='container'>{projects}</div>
+        <>{projects}</>
     )
 }
 
