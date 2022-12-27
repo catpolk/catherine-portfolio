@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 import { validateEmail } from '../../utils/helpers';
-import '../styles/Contact.css';
 
+//using state for the form 
 function Contact () {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -14,11 +14,12 @@ function Contact () {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
-
+    //condition statement that checks if the type equals to the  parameter, it will set the state to the value 
         if (inputType === 'name') {
             setName(inputValue);
         } else if (inputType === 'email') {
             setEmail(inputValue);
+            //checks whether email is valid or not 
             if (!validateEmail(email)) {
                 setErrorMessage('Email is invalid');    
             } else { 
@@ -26,6 +27,7 @@ function Contact () {
             }
         } else {
             setMessage(inputValue);
+            //checks if text area is empty, it gives an error message 
             if (message === '') {
                 setErrorMessage('Message is required');    
             } else { 
@@ -37,7 +39,7 @@ function Contact () {
     const handleFormSubmit = (e) => {
         e.preventDefault(email);
     }
-
+//rendering HTML 
     return (
         <div className="row justify-content-md-center p-3">
           <div className='col-6'>
