@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/About.css';
 
+//rendering About page 
 function About () {
     return (
         <div className="row justify-content-md-center p-3">

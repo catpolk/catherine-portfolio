@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/Project.css';
 
+//props that will be used in the Porfolio page 
 function Project(props) {
     return (
         <div className='col-lg-4'>

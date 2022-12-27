@@ -9,12 +9,13 @@
 }
 
 .card-body a {
-    font-size: medium;
-    color: white;
+    font-size:x-large;
+    color: rgb(39, 37, 37);
     text-decoration: solid;
 }
  .card-body p {
-    color: white;
+    color: rgb(54, 50, 50);
+    font-size: larger;
  }
 
 .card-body:hover {

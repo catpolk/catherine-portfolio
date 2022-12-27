@@ -1,9 +1,11 @@
 import React from 'react';
 
+//rendering resume page 
 function Resume () {
     return (
         <div className="row justify-content-md-center p-3">
             <div className='col-8'>
+                {/* an option to download a pdf file  */}
                 <h3>Download my <a href='resume_cp.pdf' download> Resume </a></h3>
                 <br />
                 <div className='resume'>

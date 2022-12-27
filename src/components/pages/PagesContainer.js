@@ -4,6 +4,7 @@ import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Resume from './Resume';
 
+//switch statement that switches between pages user visits and returns a component of the page 
 function PagesContainer () {
     let Component 
     switch (window.location.pathname) {
@@ -24,6 +25,7 @@ function PagesContainer () {
             break;
     }
 
+    //renders a component 
     return (
         <div className='container pt-4'>
             <Component />

@@ -3,7 +3,7 @@ import Project from '../Project';
 import '../styles/Project.css';
 
 
-
+//an array of objects for portfolio page with links to the actual projects 
 const applications = [
     [
         { title: 'Social Network API', href: 'https://github.com/catpolk/Social-Network-API', stack: 'NoSQL', deployed: 'https://drive.google.com/file/d/1gddjAs22LzDAaH7jFJTLWF588mAjN5iv/view?usp=share_link-connect-social-network', img: 'cloud' },
@@ -20,7 +20,7 @@ const applications = [
     
     
 ]
-
+//function that maps through the applications array and then maps again each of the object of the projectsList array 
 function Portfolio () {
     const projects = applications.map((projectsRow) => { 
         const projectsList = projectsRow.map((project) => {
@@ -34,10 +34,10 @@ function Portfolio () {
                 />
             )
         });
-
+        //returning the first mapped result with each row of the array 
         return (<div className="row justify-content-md-center p-3">{projectsList}</div>);
     })
-
+        //returning the second mapped result with each object the the array 
     return (
         <>{projects}</>
     )
