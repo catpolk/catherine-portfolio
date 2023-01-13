@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/About.css';
+import './styles/About.css';
 
 //rendering About page 
 function About () {
@@ -8,7 +8,7 @@ function About () {
             <div className='col-8'>
                 <div> 
                     <h2 className='intro'>About me</h2>
-                    <img  src="images/avatar.png" alt="avatar"  className='avatar'/>
+                    <img  src={process.env.PUBLIC_URL + "/images/avatar.png"} alt="avatar"  className='avatar'/>
                 </div>
                 <section>
                     <p className='bio'>

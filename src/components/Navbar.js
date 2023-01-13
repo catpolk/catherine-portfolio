@@ -1,5 +1,21 @@
 import React from 'react';
 import './styles/Navbar.css';
+import { Link } from 'react-router-dom';
+
+// const Header = () => {
+//     return (
+//         <header className='navbar navbar-expand-lg navbar-light bg-light'>
+//             <div className="container-fluid">
+//                 <Link className='text-dark' to='/'>
+//                     <h2 className='m-0' style={{ fontSize: '2rem'}} >
+//                         About
+//                     </h2>
+//                 </Link>
+//             </div>
+//         </header>
+//     )
+// }
+
 
 //an array of the object for href pages component to see the active state of the navbar links 
 const navLinks = [
@@ -16,7 +32,7 @@ function Navbar() {
         if(window.location.pathname === navLink.href) {
             active = 'active' 
         } else {
-        //if to true, returns an empty string 
+        //if not true, returns an empty string 
             active = '' 
         }
 

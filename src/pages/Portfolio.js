@@ -1,6 +1,5 @@
 import React from 'react';
-import Project from '../Project';
-import '../styles/Project.css';
+import Project from '../components/Project';
 
 
 //an array of objects for portfolio page with links to the actual projects 
