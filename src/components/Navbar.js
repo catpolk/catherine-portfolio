@@ -2,21 +2,6 @@ import React from 'react';
 import './styles/Navbar.css';
 import { Link } from 'react-router-dom';
 
-// const Header = () => {
-//     return (
-//         <header className='navbar navbar-expand-lg navbar-light bg-light'>
-//             <div className="container-fluid">
-//                 <Link className='text-dark' to='/'>
-//                     <h2 className='m-0' style={{ fontSize: '2rem'}} >
-//                         About
-//                     </h2>
-//                 </Link>
-//             </div>
-//         </header>
-//     )
-// }
-
-
 //an array of the object for href pages component to see the active state of the navbar links 
 const navLinks = [
     { title: 'About', href: '/', },
@@ -38,7 +23,7 @@ function Navbar() {
 
         return (
             <li className="nav-item">
-                <Link to={navLink.href} className={`nav-link ${active}`}>
+                <Link to={process.env.PUBLIC_URL + navLink.href} className={`nav-link ${active}`}>
                     {/* //map is building a single navbar link */}
                     {navLink.title}
                 </Link>
