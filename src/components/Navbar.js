@@ -38,8 +38,10 @@ function Navbar() {
 
         return (
             <li className="nav-item">
-                {/* //map is building a single navbar link */}
-                <a className={`nav-link ${active}`} href={navLink.href}>{navLink.title}</a>
+                <Link to={navLink.href} className={`nav-link ${active}`}>
+                    {/* //map is building a single navbar link */}
+                    {navLink.title}
+                </Link>
             </li>
         )
     })

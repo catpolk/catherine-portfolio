@@ -44,7 +44,7 @@ function Contact () {
         <div className="row justify-content-md-center p-3">
           <div className='col-6'>
             <h1>Contact</h1>
-            <form target='blank' action='mailto:cpolknytx@gmail.com' method='post' enctype="text/plain" >
+            <form target='blank' action='mailto:cpolknytx@gmail.com' method='post'>
               <div className='mb-3'>
                 <input name="name" type="text" className="form-control" placeholder='Name' onBlur={handleInputChange} required />
               </div>
@@ -52,7 +52,7 @@ function Contact () {
                 <input name="email" type="email" className="form-control" placeholder='Email Address' onBlur={handleInputChange} required />
               </div>
               <div className="mb-3"> 
-                <textarea placeholder="Your Message" className="form-control" name="message" rows="5" onBlur={handleInputChange} required> </textarea>
+                <textarea placeholder="Your Message" className="form-control" name="message" rows="5" onBlur={handleInputChange} required />
               </div>
               <button type="submit" className="btn btn-lg btn-dark btn-block" onBlur={handleInputChange}>Submit Form</button>
             </form>
