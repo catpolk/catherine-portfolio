@@ -12,7 +12,9 @@ function PagesContainer () {
     return (
         <Routes>
             <Route path="*" element={<About />}/>
+            <Route path={process.env.PUBLIC_URL + "/portfolio"} element={<Portfolio />}/>
             <Route path={process.env.PUBLIC_URL + "/contact"} element={<Contact />}/>
+            <Route path={process.env.PUBLIC_URL + "/resume"} element={<Resume />}/>
         </Routes>
     );
 }
