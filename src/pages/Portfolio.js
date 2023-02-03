@@ -6,7 +6,7 @@ import Project from '../components/Project';
 //an array of objects for portfolio page with links to the actual projects 
 const applications = [
     [
-        { title: 'Social Network API', href: 'https://github.com/catpolk/Social-Network-API', stack: 'NoSQL', deployed: 'https://drive.google.com/file/d/1gddjAs22LzDAaH7jFJTLWF588mAjN5iv/view?usp=share_link-connect-social-network', img: 'cloud' },
+        { title: 'Solo Traveler', href: 'https://github.com/catpolk/project3', stack: 'MERN', deployed: 'https://solo.herokuapp.com/', img: 'cloud' },
         { title: 'Employee Tracking App', href: 'https://github.com/catpolk/employee-tracking-application', stack: 'SQL', deployed: 'https://drive.google.com/file/d/1OP9Vs2sW2AgBxfXC5VeITRmGJ1twCynf/view?usp=share_link', img: 'frost' }
     ],
     [

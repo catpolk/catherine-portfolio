@@ -9,3 +9,12 @@
 - This application is simple but it is a great way to show my technical skilss and talants but at the same time not overwhelm recruters. This application is great additional tool that can help in a job search process.
 
 - I learned React and that it is great technology especially for single-page projects. 
+
+
+![alt screenshot](./public/images/Screen%20Shot%202023-02-03%20at%203.44.06%20PM.png)
+
+![alt screenshot](./public/images/Screen%20Shot%202023-02-03%20at%203.44.17%20PM.png)
+
+![alt screenshot](./public/images/Screen%20Shot%202023-02-03%20at%203.44.26%20PM.png)
+
+![alt screenshot](./public/images/Screen%20Shot%202023-02-03%20at%203.43.54%20PM.png)
