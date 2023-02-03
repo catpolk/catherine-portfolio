@@ -10,6 +10,7 @@
 
 - I learned React and that it is great technology especially for single-page projects. 
 
+![alt screenshot](./public/images/Screen%20Shot%202023-02-03%20at%203.43.54%20PM.png)
 
 ![alt screenshot](./public/images/Screen%20Shot%202023-02-03%20at%203.44.06%20PM.png)
 
@@ -17,4 +18,7 @@
 
 ![alt screenshot](./public/images/Screen%20Shot%202023-02-03%20at%203.44.26%20PM.png)
 
-![alt screenshot](./public/images/Screen%20Shot%202023-02-03%20at%203.43.54%20PM.png)
+
+Github: https://github.com/catpolk/catherine-portfolio
+
+Pages: https://catpolk.github.io/catherine-portfolio/
